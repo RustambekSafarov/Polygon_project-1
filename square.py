@@ -1,5 +1,6 @@
 class Square:
-    def __init__(self, square_side:float):
+    def __init__(self, square_side: float):
+        self.square_side = square_side
         """
         is_valid() -> bool
         area() -> float
@@ -18,9 +19,7 @@ class Square:
         """
         pass
 
-    
     def area(self):
-        
         """
         This method finds the area of the square.
 
@@ -29,11 +28,10 @@ class Square:
         Returns:
             float or int: return area of the square if the square is valid, 0 otherwise
         """
-        pass
-    
+        ar = pow(self.square_side, 2)
+        return ar
 
     def perimeter(self):
-
         """
         This method finds the perimeter of the square.
 
@@ -42,4 +40,4 @@ class Square:
         Returns:
             float: return perimeter of the square if the square is valid, 0 otherwise
         """
-        pass
+        return 4 * self.square_side
