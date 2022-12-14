@@ -1,20 +1,21 @@
 from math import pi
 
+
 class Circle:
-    def __init__(self, radius:float):
+    def __init__(self, radius: float):
         self.radius = radius
-        
+
     def is_valid(self) -> bool:
         """
         This method checks if the circle is valid.
-        
+
         Args:
             No
         Returns:
             bool: True if the circle is valid, False otherwise
         """
         pass
-    
+
     def diameter(self):
         '''
         This method finds the diameter of the circle.
@@ -24,9 +25,8 @@ class Circle:
         Returns:
             float: return diameter of the circle if the circle is valid, 0 otherwise
         '''
-        pass
-        
-    
+        return 2*self.radius
+
     def circumference(self) -> float:
         '''
         This method finds the circumference of the circle.
@@ -36,9 +36,8 @@ class Circle:
         Returns:
             float: return circumference of the circle if the circle is valid, 0 otherwise
         '''
-        pass
+        return 2*pi*self.radius
 
-    
     def area(self) -> float:
         '''
         This method finds the area of the circle.
@@ -48,4 +47,4 @@ class Circle:
         Returns:
             float: return area of the circle if the circle is valid, 0 otherwise
         '''
-        pass
+        return pi * pow(self.radius, 2)
